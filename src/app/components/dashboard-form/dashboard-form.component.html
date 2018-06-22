@@ -1,0 +1,35 @@
+<div class="row">
+<div class="card col-6 offset-3">
+    <h5 class="card-title">Datos de dashboard</h5>
+  <hr>
+  <div class="card-body">
+    <form class="row">
+      <div class="form-group col-12">
+        <label >Nombre de dashboard</label>
+        <input type="text" class="form-control form-control-sm"  placeholder="Nombre de dashboard" [(ngModel)]="model.nombre">
+      </div>
+      <div class="form-group col-12">
+          <label >Incremento de compras</label>
+          <input type="number" class="form-control form-control-sm"  placeholder="% Incremento de compras" [(ngModel)]="model.increcompras">
+        </div>
+      <div class="form-group col-6">
+        <label >Cantidad de nuevas compras</label>
+        <input type="number" class="form-control form-control-sm" placeholder="Nuevas compras" [(ngModel)]="model.cantcompras">
+      </div>
+      <div class="form-group col-6">
+        <label >Cantidad de nuevos usuarios</label>
+        <input type="password" class="form-control form-control-sm"  placeholder="Nuevos usuarios" [(ngModel)]="model.cantusuarios">
+      </div>
+      <div class="form-group col-6">
+        <label >Cantidad de nuevas visitas</label>
+        <input type="password" class="form-control form-control-sm"  placeholder="Nuevas visitas" [(ngModel)]="model.cantvisitas">
+      </div>
+      <div class="form-group col-6">
+        <label >Fecha de ingreso</label>
+        <input type="date" class="form-control form-control-sm" [(ngModel)]="model.fecha">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
+</div>

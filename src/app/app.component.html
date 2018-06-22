@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#">e-Ventas</a>
+</nav>
+<div id="sidebar-wrapper" >
+  <ul class="sidebar-nav">
+    <li class="sidebar-brand row">
+      <a href="#" class="col-6">
+        <img class="img-user" src="https://www.landvanrouw.nl/wp-content/uploads/2017/02/m.jpg" alt="">
+      </a>
+      <p class="nombre-user col-6">Usuario</p>
+    </li>
+    <hr>
+    <li class="main-nav">
+      <a href="#">
+        Main navigation
+      </a>
+    </li>
+    <li class="dash">
+      <a href="#" [routerLink]="['/dashboard']">
+        <span class="">Dashboard</span>
+        <i class="fas fa-angle-down icon-down"></i>
+      </a>
+    </li>
+    <li class="dash">
+        <a href="#" [routerLink]="['/dashboardForm']">
+          <span class="">Formulario</span>
+          <i class="fas fa-angle-down icon-down"></i>
+        </a>
+      </li>
+  </ul>
+  </div>
+  <main >
+    <br>
+    <router-outlet></router-outlet>
+  </main>
